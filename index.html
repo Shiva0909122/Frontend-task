@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+
+    <title>Frontend Mentor | Four card feature section</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="https://fonts.google.com/specimen/Poppins">
+<style>
+    body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* headings */
+.sub-heading{
+margin-top: -16px;
+}
+.heading,
+.sub-heading {
+    text-align: center;
+    font-weight: 200;
+    font-family: Poppins;
+    color: hsl(203, 8%, 55%);
+}
+.heading{
+    margin-top: 2px;
+}
+.heading1 {
+    text-align: center;
+    font-family: Poppins;
+    color: hsl(234, 12%, 34%);
+    font-weight: bolder;
+    margin-top: -11px;
+}
+
+.container1{
+    margin-left: 150px;
+    margin-top: -80px;
+}
+/* grid */
+
+.grid-1 {
+    /* background-color: rgb(222, 230, 230); */
+    margin: 14rem 0px 0px 1rem;
+    height: 200px;
+    width: 300px;
+    border-top: 5px solid skyblue;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+.grid-4 {
+    /* background-color: rgb(222, 230, 230); */
+    margin: -21.5rem 45rem;
+    height: 200px;
+    width: 300px;
+    border-top: 5px solid navy;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+.grid-2 {
+    /* position: absolute; */
+    /* background-color: rgb(222, 230, 230); */
+    margin: -21rem 0px 0px 23rem;
+    height: 200px;
+    width: 300px;
+    border-top: 5px solid red;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+.grid-3 {
+    /* background-color: rgb(222, 230, 230); */
+    margin: 2rem 23rem;
+    height: 200px;
+    width: 300px;
+    border-top: 5px solid orange;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+.grid-heading {
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 800;
+    margin: 15px 15px;
+    color: hsl(227, 9%, 19%);
+}
+
+.grid-subheading {
+    font-family: Poppins;
+    font-size: 15px;
+    font-weight: 200;
+    margin: 15px 15px;
+    color: hsl(227, 9%, 19%);
+}
+
+.image {
+    margin: 30px 200px;
+    height: 50px;
+}
+
+/* footer */
+footer {
+    margin-top: 470px;
+    text-align: center;
+}
+
+.attribution {
+    font-size: 15px;
+
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+/* responsive for 375px */
+@media (min-width: 320px) and (max-width: 375px) {
+
+    /* Adjust font size for smaller screens */
+    body {
+        font-family: Poppins;
+        font-size: 15px;
+        background-color: rgb(240, 236, 236);
+    }
+.heading{
+    font-size: 25px;
+}
+    /* grid */
+
+    .grid-1 {
+        margin: 6rem 0px 0px -8rem;
+        height: 180px;
+        width: 280px;
+    }
+
+    .grid-4 {
+        margin: 1rem 0px 0px -8rem;
+        height: 180px;
+        width: 280px;
+    }
+
+    .grid-2 {
+        margin: 1rem 0px 0px -8rem;
+        height: 180px;
+        width: 280px;
+    }
+
+    .grid-3 {
+        margin: 1rem 0px 0px -8rem;
+        height: 180px;
+        width: 280px;
+
+    }
+
+    .image {
+        margin: 5px 200px;
+        height: 50px;
+    }
+
+    /* footer */
+    footer {
+        margin-top: 20px;
+        text-align: center;
+    }
+
+
+}
+</style>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="heading"> Reliable, efficient delivery</h1>
+        <h1 class="heading1"> Powered by Technology</h1>
+        <p class="sub-heading">Our Artificial Intelligence powered tools use millions of project data <br> points
+            to ensure that your project is successful
+        </p>
+    </div>
+
+    <div class="container1">
+
+        <!-- grid -->
+        <div class="grid-1">
+            <div class="grid-heading">
+                Supervisor
+            </div>
+            <div class="grid-subheading">
+                Monitors activity to identify project roadblocks
+            </div>
+            <img src=" icon-supervisor.svg" alt="Supervisor" class="image">
+
+        </div>
+        <!-- 1 -->
+        <div class="grid-2">
+            <div class="grid-heading">
+                Team Builder
+            </div>
+            <div class="grid-subheading">
+                Scans our talent network to create the optimal team for your project
+            </div>
+            <img src=" icon-team-builder.svg" alt="Supervisor" class="image">
+
+        </div>
+        <!-- 2 -->
+        <div class="grid-3">
+            <div class="grid-heading">
+                Karma
+            </div>
+            <div class="grid-subheading">
+                Regularly evaluates our talent to ensure quality
+
+            </div>
+            <img src=" icon-karma.svg" alt="Supervisor" class="image">
+
+        </div>
+        <!-- 3 -->
+        <div class="grid-4">
+            <div class="grid-heading">
+                Calculator
+            </div>
+            <div class="grid-subheading">
+                Uses data from past projects to provide better delivery estimates
+            </div>
+            <img src=" icon-calculator.svg" alt="Supervisor" class="image">
+
+        </div>
+    </div>
+    <footer>
+        <p class="attribution">
+            Challenge by <a href="#" target="_blank">ELC - TEAM</a>.
+            Coded by <a href="#">D. Shivarth</a>.
+        </p>
+    </footer>
+</body>
+
+</html>
